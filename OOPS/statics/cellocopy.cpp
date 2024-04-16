@@ -11,9 +11,17 @@ public:top(){
     p=0;
 }
 
+top (top &t)    //own copy or deep copy 
+{
+    a=t.a;
+    p=new int;
+    *p=*(t.p);
+}
+
 top (int x, int y)
 {
     a=x;
+    p = new int ;
     p=&y;
 
 }
@@ -24,6 +32,7 @@ void update ()
 }
 void show()
 {
+     
     cout<<"vlaue of a="<<a<<"\n";
     cout<<"vlaue of *p="<<*p<<"\n";
 
