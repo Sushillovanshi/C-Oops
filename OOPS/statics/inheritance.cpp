@@ -81,7 +81,7 @@ int main()
 {
    customer obj;
    obj.cust();
-   obj.reward();
+   obj.reward(); 
     
 
 }
